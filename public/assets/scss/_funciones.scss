@@ -1,0 +1,9 @@
+@mixin color_letra($color){
+    color: $color;
+}
+@mixin tamanio_letra($tamanio){
+    font-size: $tamanio;
+}
+@mixin redondear($largo,$ancho){
+    border-radius: $largo $ancho;
+}

@@ -1,0 +1,137 @@
+@import "_miscolores.scss";
+@import "_margenes.scss";
+@import "_tamanios.scss";
+@import "_funciones.scss";
+@import "_menu.scss";
+@import "_panel.scss";
+@import "_sidebar.scss";
+@import "_galeria.scss";
+.panel-capital{
+    background-color: $blanco;
+    padding:0 0 30px 0;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.galeria{
+    margin-bottom: 60px;
+}
+
+
+.lateral-izquierda,.lateral-derecha,{
+    background-color: $bg_panel;
+    padding: 0px;
+    .seccion{
+        padding: 0 10px 5px 15px;
+        margin: 0 0 10px 0;
+    }
+    .titulo{
+        paddin:5px auto;
+        font-sixe: $letra_normal;
+        font-weight: 600;
+       text-transform: uppercase;  
+    }
+    .encabezado{
+        height: 60px;
+        width:100%;
+       
+        background-color: $bg_blue;
+    }
+}
+
+.titulo{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.central{
+    background-color: $blanco;
+    padding:0;
+    border: 0;
+    text-align: center;
+    border-radius: 0;
+    color: $negro;
+    .encabezado{
+        text-aling: center;
+        height: 60px;
+        width:100%;
+        margin:0;
+        padding: 12px 0;
+        font-size: $letra_grande;
+        color: $blanco;
+        background-color: $verde;
+        margin-bottom:15px;
+    }
+}
+#centro{
+    .item-entrada{
+        padding: 0;
+        padding-bottom: 15px;
+        height: 300px;
+        border: 1px solid $negro;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        .img-entrada{
+        height:180px;
+        position:relative;
+       
+        }
+        img{
+            height:180px;
+            width:100%;
+        }
+    }
+    
+    .nombrenegocio{
+        width: 100%;
+    background: $negro;
+        text-align: center;
+    font-weight: bolder;
+    opacity: .9;
+    position: absolute;
+    @include color_letra($blanco);
+    bottom:-10px;
+    padding: 5px 0;
+    text-transform: uppercase;
+      }
+    .slogan{
+        display: table-cell;
+        padding: 5px 5px;
+        text-align: justify;
+        word-wrap: break-word; 
+        vertical-align:middle;
+        line-height: 90%;
+        font-size: $letra_normal;
+        font-family: 'Indie Flower', cursive;
+    }
+   
+    .ver-mas{
+        position: absolute;
+        bottom:20px;
+        right: 25px;
+    }
+    a{
+        background: $color_secundario;
+                &:hover{
+                    opacity: .8;
+                }
+    }
+    .panel-default{
+        border-color: transparent;
+        border: none;
+    }
+}
+.dropdown{
+    padding-right: 0px;
+    padding-left: 0px;
+        button{
+            width:100%;
+            text-align:center;
+        }
+        
+}
+
+.text-blanco{
+    @include color_letra($blanco);
+}

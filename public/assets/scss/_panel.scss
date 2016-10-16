@@ -1,0 +1,15 @@
+.panel-primary{
+    border-color: $bg_blue;
+   
+    .panel-heading {
+        color: $blanco;
+        background-color: $bg_blue; 
+        border-color: $bg_blue;
+        }
+}
+.panel-heading{
+        padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}

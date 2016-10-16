@@ -1,0 +1,78 @@
+#accordion{
+    width:50px;
+     z-index: 801;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    
+   font-size: $letra_grande;
+         color:$blanco;
+        a,span{
+           width:100%;
+           margin:0px;
+           padding:0px;
+
+        }
+    span{
+        padding: 10px 0;
+        font-size: $letra_grande;
+      }
+}
+#buscador{
+
+     z-index: 801;
+    position: fixed;
+   display:none;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+
+}
+#radio_contenido{
+    
+     z-index: 801;
+    position: fixed;
+   display:none;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+        .panel-heading{
+            padding: 5px 15px;
+        }
+    padding-bottom: 0px;
+}
+#radionomy-player{
+    margin-bottom: 0px;
+}
+
+#asidebar{
+     font-size: 100%;
+    color:$blanco;
+     background: $negro;
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+        li,a,span{
+           width:100%;
+           margin:0px;
+           padding:0px;
+
+        }
+    span{
+        padding: 10px 0;
+        font-size: $letra_grande;
+         color:$blanco;
+                &:hover{
+                    background: $bg_blue;
+                }
+    }
+
+}
+.text-vertical-center {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
