@@ -21,7 +21,8 @@ class AddPrincipales extends Migration
             $table->string('descripcion',80);
             $table->date('expiracion');
             $table->integer('id_imagen')->unsigned();
-            $table->foreign('id_imagen')->references('id')->on('imagenes');
+            $table->foreign('id_imagen')->references('id')->on('imagenes')->onDelete('cascade');
+            $table->timestamps();
             //
         });
     }

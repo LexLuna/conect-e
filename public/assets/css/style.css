@@ -183,8 +183,46 @@ body {
   margin-bottom: 30px;
   text-align: center; }
 
+#img-perfil {
+  width: 40px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-right: 0;
+  padding-left: 0; }
+
 .galeria {
   margin-bottom: 60px; }
+
+.admin {
+  border: 1px solid #144ea2;
+  color: #ffffff;
+  padding: 0px;
+  position: relative; }
+  .admin #titulo {
+    background-color: #144ea2;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-transform: uppercase; }
+  .admin .list-group {
+    background-color: #3b8dbd;
+    color: #ffffff;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    text-align: center; }
+  .admin .admin-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px -5;
+    font-weight: 600;
+    border: 1px solid #eaeaea;
+    text-decoration: none; }
 
 .lateral-izquierda, .lateral-derecha {
   background-color: #f0f0f0;
@@ -193,8 +231,7 @@ body {
     padding: 0 10px 5px 15px;
     margin: 0 0 10px 0; }
   .lateral-izquierda .titulo, .lateral-derecha .titulo {
-    paddin: 5px auto;
-    font-sixe: 16px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase; }
   .lateral-izquierda .encabezado, .lateral-derecha .encabezado {
@@ -214,7 +251,7 @@ body {
   border-radius: 0;
   color: #000000; }
   .central .encabezado {
-    text-aling: center;
+    text-align: center;
     height: 60px;
     width: 100%;
     margin: 0;
@@ -281,11 +318,3 @@ body {
   color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
-
-#img-perfil{
-  width: 40px;
-  padding-top: 5px;
-  padding-bottom: 3px;
-  padding-right: 0;
-  padding-left: 0;
-}

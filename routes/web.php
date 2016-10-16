@@ -21,5 +21,6 @@ Route::get('/{provider}/callback','SocialAuthController@callback');
 
 Route::group(['prefix' => 'admin','middleware' => ['auth','admin']], function() {
   Route::get('/', 'AdminController@index');
+  Route::resource('principal','PrincipalController');
    	
 });
