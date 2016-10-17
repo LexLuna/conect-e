@@ -251,6 +251,9 @@ body {
 
 .tabla {
   margin: 10px 15px 10px 15px; }
+  .tabla img {
+    width: 50px;
+    height: 50px; }
 
 .formulario {
   text-align: left;
@@ -293,51 +296,54 @@ body {
     background-color: #82b965;
     margin-bottom: 15px; }
 
-#centro .item-entrada {
-  padding: 0;
-  padding-bottom: 15px;
-  height: 300px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  overflow: hidden; }
-  #centro .item-entrada .img-entrada {
-    height: 180px;
-    position: relative; }
-  #centro .item-entrada img {
-    height: 180px;
-    width: 100%; }
-#centro .nombrenegocio {
-  width: 100%;
-  background: #000000;
-  text-align: center;
-  font-weight: bolder;
-  opacity: .9;
-  position: absolute;
-  color: #ffffff;
-  bottom: -10px;
-  padding: 5px 0;
-  text-transform: uppercase; }
-#centro .slogan {
-  display: table-cell;
-  padding: 5px 5px;
-  text-align: justify;
-  word-wrap: break-word;
-  vertical-align: middle;
-  line-height: 90%;
-  font-size: 16px;
-  font-family: 'Indie Flower', cursive; }
-#centro .ver-mas {
-  position: absolute;
-  bottom: 20px;
-  right: 25px; }
-#centro a {
-  background: #01A5A6; }
-  #centro a:hover {
-    opacity: .8; }
-#centro .panel-default {
-  border-color: transparent;
-  border: none; }
+#centro {
+  /*    a{
+          background: $color_secundario;
+                  &:hover{
+                      opacity: .8;
+                  }
+      }*/ }
+  #centro .item-entrada {
+    padding: 0;
+    padding-bottom: 15px;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden; }
+    #centro .item-entrada .img-entrada {
+      height: 180px;
+      position: relative; }
+    #centro .item-entrada img {
+      height: 180px;
+      width: 100%; }
+  #centro .nombrenegocio {
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    font-weight: bolder;
+    opacity: .9;
+    position: absolute;
+    color: #ffffff;
+    bottom: -10px;
+    padding: 5px 0;
+    text-transform: uppercase; }
+  #centro .slogan {
+    display: table-cell;
+    padding: 5px 5px;
+    text-align: justify;
+    word-wrap: break-word;
+    vertical-align: middle;
+    line-height: 90%;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive; }
+  #centro .ver-mas {
+    position: absolute;
+    bottom: 20px;
+    right: 25px; }
+  #centro .panel-default {
+    border-color: transparent;
+    border: none; }
 
 .dropdown {
   padding-right: 0px;

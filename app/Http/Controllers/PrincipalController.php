@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Principal;
+use App\Imagen;
 use App\Http\Requests;
 use App\Http\Requests\PrincipalRequest;
 
@@ -39,7 +40,23 @@ class PrincipalController extends Controller
      */
     public function store(PrincipalRequest $request)
     {
-        //
+        
+        $file = $request->file('imagen');
+        $name = 'principal_' . time(). '.'. $file->getClientOriginalExtension();
+        $path = public_path() . '/images/principales/';
+        $file->move($path, $name);
+        
+        $image = new Imagen();
+        $image->imagen = $name;
+        $image->save();
+        
+        $principal = new Principal($request->all());
+        $principal->imagen()->associate($image);
+       
+        $principal->save();
+        
+        flash('El principal se ha creado con exito','success');
+        return redirect()->route('principal.index');
     }
 
     /**

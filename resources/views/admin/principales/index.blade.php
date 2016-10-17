@@ -24,8 +24,9 @@
                 <tr>
                     <td>{{ $principal->id }}</td>
                     <td>{{ $principal->title }}</td>
-                    <td>{{ $principal->imagen }}</td>
-                    <td>{{ $principal->expiracion }}</td>
+                     <td>{{ $principal->expiracion }}</td>
+                     <td><img src="{{asset('images/principales/'.$principal->imagen->imagen)  }}" class="img-rounded img-responsive center-block"></td>
+                   
                     <td>
                         <a href="{{ route('principal.edit',$principal->id)}}" class="btn btn-danger"><span class="glyphicon glyphicon-wrench"></span></a>
                         <a href="{{ route('principal.destroy',$principal->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span></a>

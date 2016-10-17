@@ -26,9 +26,9 @@ class PrincipalRequest extends FormRequest
         return [
             'title' =>'min:8|max:60|required|unique:principales',
             'descripcion'=> 'min:20|max:80|required',
-            'contenido' => 'min:60|required',
+            'contenido' => 'min:20|required',
             'expiracion' => 'required',
-            'imagen_id' => 'required',
+            'imagen' => 'required',
             
             //
         ];

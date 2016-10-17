@@ -9,7 +9,7 @@ class Principal extends Model
     //
     protected $table = "principales";
     protected $fillable = [
-        'title', 'contenido', 'decripcion','expiracion','id_imagen',
+        'title', 'contenido', 'descripcion','expiracion','imagen_id',
     ];
    
     public function imagen()

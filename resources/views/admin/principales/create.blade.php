@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="formulario">
-	{!! Form::open(['route' => 'principal.store' ,'method' =>'POST'])!!}
+	{!! Form::open(['route' => 'principal.store' ,'method' =>'POST','files' => true])!!}
 	<div class="form-group">
 		{!! Form::label('title','Titulo') !!}
 		{!! Form::text('title',null,['class' => 'form-control','placeholder' => 'Soy el titulo','required']) !!}
