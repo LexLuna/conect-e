@@ -1,11 +1,10 @@
-@extends('layouts.main')
+@extends('admin.layout.main')
 
 @section('page')
 Administrador |
 @endsection
-
 @section('content')
-	<div class="col-md-6 col-md-offset-3 ">
+<div class="col-md-6 col-md-offset-3 ">
 	<div class="text-center  panel panel-primary">
 	    <div class="panel-heading">
 	        <div class="panel-title">

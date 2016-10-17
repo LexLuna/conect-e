@@ -181,6 +181,7 @@ return [
         //Mis Service Providers , uso adicional
         Laravel\Socialite\SocialiteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
 
 
     ],

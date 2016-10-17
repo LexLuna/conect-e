@@ -5,7 +5,7 @@
         <section id="centro" class="col-xs-12 col-md-8 central">
                 <div class="encabezado">@yield('page')</div>
                 @include('flash::message')
-                        @include('admin.template.partials.errors')
+                        @include('admin.layout.partials.errors')
                         @yield('content')
         </section>
     </div>

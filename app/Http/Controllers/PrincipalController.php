@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Principal;
 use App\Http\Requests;
+use App\Http\Requests\PrincipalRequest;
 
 class PrincipalController extends Controller
 {
@@ -27,6 +28,7 @@ class PrincipalController extends Controller
     public function create()
     {
         //
+        return view('admin.principales.create');
     }
 
     /**
@@ -35,7 +37,7 @@ class PrincipalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PrincipalRequest $request)
     {
         //
     }
