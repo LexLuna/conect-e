@@ -11,7 +11,9 @@
     <title>@yield('page') @yield('title','Conect-e')</title>
     <link rel="stylesheet"  href="{{ asset('assets/bootstrap/css/bootstrap.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    @yield('style')
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
